@@ -1,0 +1,3 @@
+http://localhost/newvfgcontacts/newlead.php?firstname=market&lastname=lead&phone=702-374-7232&email=marketlead@gmail.com&agentid=99xxx
+
+http://www.vfgcontact.com/newlead.php?firstname=Ryan&lastname=Testforid&phone=972-555-1212&email=testforid@mlmpublicity.com&vfgid=99xxx

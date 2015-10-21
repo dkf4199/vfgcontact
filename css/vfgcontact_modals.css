@@ -1,0 +1,16 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Modal Container */
+#modal-container {
+	/*font: 16px/22px 'Trebuchet MS', Verdana, Arial;*/
+	font: 1em 'Merriweather Sans', sans-serif;
+	text-align:left; 
+	/*width:450px;*/
+	width:65em;
+	max-height: auto;
+	background-image: url(../images/bg2.jpg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	overflow:hidden;
+}

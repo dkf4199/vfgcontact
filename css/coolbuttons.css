@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* CSS Document     */
+a.coolbutton, input[type=submit], button {
+	text-decoration: none;
+	border-color:rgba(0, 0, 0, 0.56);
+	cursor: pointer;
+	outline: none;
+	color:#111;
+	font-family:"Lucida Grande","Lucida Sans","Lucida Sans Unicode","Segoe UI",Verdana,sans-serif;
+	display:inline-block;
+	vertical-align:top;
+	position:relative;
+	font-size:12px;
+	font-weight:bold;
+	text-align:center;
+	background-color:#aaa;
+	background: #aaa -moz-linear-gradient(top, rgba(255,255,255,.75), rgba(255,255,255,0));
+	background: #aaa -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.75)), to(rgba(255,255,255,0)));
+	text-shadow:1px 1px 0 rgba(255,255,255,.67);
+	line-height:24px;
+	height:24px;
+	margin:0 0 24px 12px;
+	width:75px;
+	padding:0;
+	/** Make the text unselectable **/
+	-moz-user-select: none;
+	-webkit-user-select: none;
+}
+input[type=submit], input[type=submit]:active {
+	line-height:1 !important;
+	width:auto;
+	padding:0 9px 1px;
+}
+a.coolbutton, a.coolbutton:after, a.coolbutton:before, button, button:after, button:before, input[type=submit] {
+	-moz-border-radius:4px;
+	-webkit-border-radius:4px;
+	border-radius:4px;
+	border-width:1px;
+	border-style:solid;
+}
+a.coolbutton:after, a.coolbutton:before, button:after, button:before {
+	display:block;
+	position:absolute;
+	content:' ';
+}
+a.coolbutton:before, button:before {
+	border-color: #FFF rgba(255,255,255,.25) rgba(255,255,255,.25);
+	left:0;
+	top:0;
+	width:73px;
+	height:22px;
+}
+a.coolbutton:after, button:after {
+	border-color: transparent transparent rgba(255, 255, 255, 0.63);
+	left:-1px;
+	bottom:-2px;
+	height:100%;
+	width:100%;
+}
+a.coolbutton:hover, a.coolbutton:focus, button:hover, button:focus, input[type=submit]:hover, input[type=submit]:focus {
+	background-image:-moz-linear-gradient(top, rgba(255,255,255,.9), rgba(255,255,255,0.2));
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.9)), to(rgba(255,255,255,0.2)));
+}
+a.coolbutton:active, button:active, input[type=submit]:active {
+	background-image:-moz-linear-gradient(top, rgba(75,75,75,.4), rgba(255,255,255,.4));
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(75,75,75,.4)), to(rgba(255,255,255,.4)));
+	line-height:26px;
+}
+a.coolbutton:active:before, button:active:before {
+	border-color: rgba(255, 255, 255, 0.11) rgba(255, 255, 255, 0.23) rgba(255, 255, 255, 0.27);
+}
+
+a.coolbutton.bg {
+	-webkit-transition: all .185s linear;
+	-moz-transition: all .185s linear;
+}
+a.coolbutton.bg, a.coolbutton.bg:hover, a.coolbutton.bg:focus {
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,.75), rgba(255,255,255,0));
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(255,255,255,.75)), to(rgba(255,255,255,0)));
+}
+a.coolbutton.bg:hover, a.coolbutton.bg:focus {
+	background-color:#a8c0cb;
+}
+a.coolbutton.bg:active {
+	background-image:-moz-linear-gradient(top, rgba(75,75,75,.4), rgba(255,255,255,.4));
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(rgba(75,75,75,.4)), to(rgba(255,255,255,.4)));
+}
+
+/* Lengths */
+a.coolbutton.short {
+	width:50px;
+}
+a.coolbutton.short:before {
+	width:48px;
+}
+a.coolbutton.long {
+	width:125px;
+}
+a.coolbutton.long:before {
+	width:123px;
+}
+a.coolbutton.super, button.super {
+	width:200px;
+}
+a.coolbutton.super:before, button.super:before {
+	width:198px;
+}
+a.coolbutton.crazy {
+	width:250px;
+}
+a.coolbutton.crazy:before {
+	width:248px;
+}
+
+/* Colors/Styles */
+a.coolbutton.blue {
+	background-color:#9eb4bf;
+}
+a.coolbutton.darkblue {
+	background-color:#046;
+	color:#fff;
+	text-shadow:-1px -1px 0 rgba(0,0,0,.3);
+}
+a.coolbutton.red {
+	background-color:#900;
+	color:#fff;
+	text-shadow:-1px -1px 0 rgba(0,0,0,.3);
+}
+a.coolbutton.red:before {
+	border-top-color:rgba(255,255,255,.5);
+}
+a.coolbutton.green {
+	background-color:#86bf7c;
+}
+a.coolbutton.pill, a.coolbutton.pill:before, a.coolbutton.pill:after {
+	-moz-border-radius:12px;
+	-webkit-border-radius:12px;
+	border-radius:12px;
+}
+a.coolbutton.black {
+	background-color:#000;
+	color:#fff;
+	text-shadow:-1px -1px 0 rgba(0,0,0,.3);
+}
+a.coolbutton.black:before {
+	border-top-color:rgba(255,255,255,.67);
+}
+a.coolbutton.sharp {
+	background-image:-moz-linear-gradient(top, rgba(255,255,255,.75), rgba(255,255,255,.33) 50%, transparent 50%, transparent 100%);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+		from(rgba(255,255,255,.75)),
+		color-stop(0.5, rgba(255,255,255,.33) ),
+		color-stop(0.5, transparent ),
+		to(transparent)
+	);
+	background-repeat:repeat-x;
+}
+a.coolbutton.sharp:hover, a.coolbutton.sharp:focus {
+	background-image:-moz-linear-gradient(top, rgba(255,255,255,.75), rgba(255,255,255,.4) 50%, rgba(255,255,255,.15) 50%, rgba(255,255,255,0) 100%);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+		from(rgba(255,255,255,.75)),
+		color-stop(0.5, rgba(255,255,255,.67) ),
+		color-stop(0.5, rgba(255,255,255,.33) ),
+		to( rgba(255,255,255,.15) )
+	);
+}
+a.coolbutton.sharp:active {
+	background-image:-moz-linear-gradient(top, rgba(75,75,75,.4), rgba(255,255,255,.4));
+	background-image:-moz-linear-gradient(top, rgba(0,0,0,.1), rgba(0,0,0,0) 50%, rgba(255,255,255,.25) 50%, rgba(255,255,255,.33) 100%);
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, 
+		from(rgba(255,255,255,.75)),
+		color-stop(0.5, rgba(255,255,255,.67) ),
+		color-stop(0.5, rgba(255,255,255,.33) ),
+		to( rgba(255,255,255,.15) )
+	);
+}
+.credit {
+	padding:60px 0 0;
+	line-height:26px;
+}
+
+button.inset {
+	width:auto;
+	padding:0 9px;
+	-moz-box-shadow:1px 1px 0 rgba(255,255,255,.5) inset;
+	-webkit-box-shadow:1px 1px 1px pink inset;
+}
+button.inset:before, button.inset:after {
+	display:none;
+}

@@ -1,0 +1,174 @@
+/* GOOGLE CALENDAR FORM DIV */
+.googleinputdiv   {
+	background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+	margin: .5em 1em;
+	/*position:relative;*/
+	/*width:45em;*/
+	text-align:center;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	/*font-style: normal;*/
+	line-height: 24px;
+	font-weight: normal;
+	color:#1d3b59;  /* a steel-blue color */
+	text-decoration: none;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:10px;
+	/*border: 1px solid #999;*/
+	/*border: inset 1px solid #333;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);*/
+}
+.googleinputdiv label {
+	display: inline-block;
+	padding: 3px 6px;
+	text-align: right;
+	width: 100px;
+	vertical-align: middle;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	font-style: italic;
+	line-height: 20px;
+	font-weight: bold;
+	color:#1d3b59;  /* a steel-blue color */
+	text-decoration: none;	
+}
+.googleinputdiv input    {
+	display:inline-block;
+	border: 1px solid #999;
+	height: 20px;
+	-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+}
+/* GENERAL FORM CSS */
+input.googlebutton {
+	width:100px;
+	/*position:absolute;
+	right:20px;
+	bottom:20px;*/
+	/*margin-top: 1em;*/
+	margin-left: .5em;
+	display:inline-block;
+	background:#1d3b59;  /* a steel-blue color */
+	color:#EEEEEE;  /* a light grey color */
+	font-family: Tahoma, Geneva, sans-serif;
+	height:24px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	border-radius: 15px;
+	border: 1p solid #999;
+}
+input.googlebutton:hover {
+	background:#EEEEEE;  /* a light grey color */
+	color:#1d3b59;  /* a steel-blue color */
+}
+span.gc_errorspan{
+	font-size: .9em;
+	color:red;
+	font-style: italic;
+	line-height: 20px;
+	font-weight: bold;
+}
+a.googlelink {
+	font-size: 14px;
+	line-height: 25px;
+	padding : 0px 5px 2px 5px;
+	margin-left:0px;
+	border-top:1px solid #999999;
+	border-left:1px solid #999999;
+	border-right:1px solid #000000;
+	border-bottom:1px solid #000000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+a:link.googlelink, a:visited.googlelink,
+a:hover.googlelink, a:active.googlelink {
+	color: #3300CC;
+	background-color: #f5fafa; /*#FAEBF7*/
+	text-decoration: none;
+}
+#gcActions {
+	background: -webkit-gradient(linear, bottom, left 175px, from(#CCCCCC), to(#EEEEEE));
+	background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+	margin: 1em auto;
+	/*position:relative;*/
+	width:45%;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	/*font-style: normal;*/
+	font-weight: normal;
+	color:#1d3b59;  /* a steel-blue color */
+	text-decoration: none;
+	text-align:center;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:5px;
+	/*border: 1px solid #999;*/
+	/*border: inset 1px solid #333;*/
+	/*-webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);*/
+}
+/* Google Calendar Container */
+#gcContainer {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	margin-left: 5em;
+	/*position:relative;*/
+	width:1000px;
+	background: #ffffff;
+	float:left;
+}
+#gcEventList {
+	/* margin: top right bottom left */
+	margin: 1em auto 1em 5em;
+	/*position:relative;*/
+	width:30em;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:5px;
+	border: 1px solid #999;
+	background: #ffffff;
+	/*border: inset 1px solid #333;*/
+	float:left;
+}
+#gcEventList a {
+	font-size: 12px;
+	line-height: 25px;
+	padding : 0px 10px 2px 10px;
+	margin-left:0px;
+	border-top:1px solid #999999;
+	border-left:1px solid #999999;
+	border-right:1px solid #000000;
+	border-bottom:1px solid #000000;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+}
+#gcEventList a:link, #gcEventList a:visited, #gcEventList a:hover, #gcEventList a:active {
+	color: #3300CC;
+	background-color: #f5fafa; /*#FAEBF7*/
+	text-decoration: none;
+}
+#gcEditEvent {
+	/* margin: top right bottom left */
+	margin: 1em auto 1em 5em;
+	/*position:relative;*/
+	width:40em;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	padding:5px;
+	border: 1px solid #999;
+	background: #ffffff;
+	/*border: inset 1px solid #333;*/
+	float:left;
+}
