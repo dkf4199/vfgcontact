@@ -1,0 +1,45 @@
+use eapcrm;
+
+CREATE TABLE `reps` (
+  `rep_id` varchar(7) NOT NULL,
+  `firstname` varchar(30) DEFAULT NULL,
+  `lastname` varchar(45) DEFAULT NULL,
+  `email` varchar(80) DEFAULT NULL,
+  `rep_timezone` varchar(30) DEFAULT NULL,
+  `signup_date` datetime DEFAULT NULL,
+  PRIMARY KEY (`rep_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `rep_logins` (
+  `email` varchar(80) NOT NULL,
+  `password` varchar(40) NOT NULL,
+  PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `contacts` (
+  `contact_id` varchar(7) NOT NULL,
+  `firstname` varchar(30) NOT NULL,
+  `lastname` varchar(45) NOT NULL,
+  `email` varchar(80) NOT NULL,
+  `phone` varchar(10) NOT NULL,
+  `city` varchar(40) DEFAULT NULL,
+  `state` char(2) DEFAULT NULL,
+  `timezone` varchar(40) DEFAULT NULL,
+  `notes` varchar(500) DEFAULT 'none',
+  `entry_date` datetime DEFAULT NULL,
+  `rep_id` varchar(7) NOT NULL,
+  PRIMARY KEY (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+CREATE TABLE `contact_progress` (
+  `contact_id` varchar(7) NOT NULL,
+  `contact_status` char(2) NOT NULL,
+  PRIMARY KEY (`contact_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+
+
+
+
+
+

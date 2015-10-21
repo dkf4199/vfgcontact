@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS jquery_ui Menu Formatting */
+#menu_left {
+	margin: 2em;
+	float:left;
+	width: 300px;
+	
+}
+
+.ui-menu {
+	width: 200px;
+	font-size: 1.2em;
+	z-index: 9999;
+	
+}
+
+#sub_menu {
+	width: auto;
+	z-index: 9999;
+	
+}

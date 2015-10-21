@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */
+
+#consultantcalendar_table {
+	width: 90%;
+	padding: 0;
+	margin: 0 auto;
+}
+#consultantcalendar_table table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+#consultantcalendar_table th {
+	font: bold 13px "Merriweather Sans", sans-serif;
+	color: #4f6b72;
+	background-color: #C1DAD7;
+	text-align: center; 
+	width: 125px;
+	padding: 5px;
+}	
+#consultantcalendar_table td {
+	font: 11px "Merriweather Sans", sans-serif;
+	color: #4f6b72;
+	/*background-color: #CCCCCC; */
+	text-align: left; 
+	width: 125px;
+	border-left: 1px solid /*#C1DAD7*/ #CBD2D3;
+	border-right: 1px solid /*#C1DAD7*/ #CBD2D3;
+	border-bottom: 1px solid /*#C1DAD7*/ #CBD2D3;
+	/*background: #fff;*/
+	/*padding: 6px 6px 6px 12px;*/
+	padding: 5px;
+	color: #4f6b72;
+	font-size: .9em;
+}
+#consultantcalendar_table a, a:visited {
+	text-decoration: none;
+}

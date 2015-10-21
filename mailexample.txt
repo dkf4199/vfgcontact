@@ -1,0 +1,39 @@
+$embody = "Hi.  I just wanted to send a quick thanks for showing interest in my fundraising efforts.  When ".
+		  "you get a chance, head over to www.OrderYourBox.com/".$_SESSION['indexpagename'].".php to check it ".
+		  "out all the cool trinket boxes available to you.  Again, thank you very much!";
+		$body = "
+			<html>
+			<body>
+			<p>".$embody."</p>
+			</body></html>";
+
+		//***** EMAIL VARS *******
+		//To:  $toaddr
+		//From: $fromaddr
+		//Body: $_POST['emailmsg']
+		//Subject: $subj
+		//*************************
+
+		//build the "To" email address string
+		$toaddr = "";
+
+		$toaddr = $scrubbedem1;
+
+		
+		//From Address:
+		$fromaddr = $_SESSION['participantem'];
+
+		//Subject
+		$subj = $_SESSION['partfn']." here.  Thanks For Your Interest In My TrinketSource Fundraiser.";
+
+		//header for html email
+		$headers .= "From: " . $fromaddr . "\r\n";
+		$headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+
+		
+
+		//Body
+		$finalbody = wordwrap($body, 70);
+		
+		mail($toaddr, $subj, $finalbody, $headers);

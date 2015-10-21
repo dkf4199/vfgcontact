@@ -1,0 +1,13 @@
+CREATE TABLE `fc_events` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `rep_id` varchar(8) COLLATE utf8_bin NOT NULL,
+  `title` varchar(100) COLLATE utf8_bin NOT NULL,
+  `description` varchar(100) COLLATE utf8_bin DEFAULT NULL,
+  `start` datetime NOT NULL,
+  `end` datetime DEFAULT NULL,
+  `url` varchar(255) COLLATE utf8_bin NOT NULL,
+  `allDay` tinyint(1) NOT NULL DEFAULT '0',
+  `appt_set_by` varchar(8) COLLATE utf8_bin DEFAULT NULL,
+  `appt_set_date` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
